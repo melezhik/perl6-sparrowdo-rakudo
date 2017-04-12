@@ -4,9 +4,39 @@
 
 ## SYNOPSIS
 
+## Via sparrowfile
+
 ```
-use sparrowdo-rakudo;
+$ cat sparrowfile
+
+# install default version
+module_run 'Rakudo'; 
+
+# install specific version
+module_run 'Rakudo', %(
+  version => 'https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb'
+)
 ```
+
+## Via sparrowdo command line:
+
+```
+# install default version  
+$ sparrowdo --host=192.168.0.1 --module_run=Rakudo 
+# install specific version
+$ sparrowdo --host=192.168.0.1 --module_run=Rakudo@version=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb
+
+```
+
+# Description
+
+This is simple installer of Rakudo Perl6.
+
+# Platforms supported:
+
+    CentOS
+    Ubuntu
+
 
 ## LICENSE
 
