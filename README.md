@@ -1,4 +1,4 @@
-# sparrowdo-rakudo
+# Sparrowdo::Rakudo
 
 [![Build Status](https://travis-ci.org/melezhik/perl6-sparrowdo-rakudo.svg?branch=master)](https://travis-ci.org/melezhik/perl6-sparrowdo-rakudo)
 
